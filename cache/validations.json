@@ -1,0 +1,1418 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "80f3539c4dd7e6fa47225b6bb8ca65054347dc8ef80663b0d17e965e23952a98",
+          "withoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355",
+          "linkedWithoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "eaded3d5158209ab8416ca9fe1d470533ed3f1cd8833b3fd880cbaf9dd0b2b9a",
+          "withoutMetadata": "2f6a63001f0dccc45b47e8b0089e453676990b76732f99a5c7f5b3c271c2152d",
+          "linkedWithoutMetadata": "2f6a63001f0dccc45b47e8b0089e453676990b76732f99a5c7f5b3c271c2152d"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register2": {
+        "src": "contracts/Register2.sol:4",
+        "version": {
+          "withMetadata": "907611216d43fc0714a06510f18384595e2b34a6128bc2fc497132697b23f397",
+          "withoutMetadata": "e81589b230146c3889f2d8c24ad8c092cb3e2953cb6786008fe1511f34c2cb44",
+          "linkedWithoutMetadata": "e81589b230146c3889f2d8c24ad8c092cb3e2953cb6786008fe1511f34c2cb44"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register2.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register2.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register2.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "80f3539c4dd7e6fa47225b6bb8ca65054347dc8ef80663b0d17e965e23952a98",
+          "withoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355",
+          "linkedWithoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register2": {
+        "src": "contracts/Register2.sol:4",
+        "version": {
+          "withMetadata": "b21708ed00f89eb83cbf1d24b54e7a7bba8d86ba4af86e528564855373c40e82",
+          "withoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355",
+          "linkedWithoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register2.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register2.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register2.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "80f3539c4dd7e6fa47225b6bb8ca65054347dc8ef80663b0d17e965e23952a98",
+          "withoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355",
+          "linkedWithoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Register2": {
+        "src": "contracts/Register2.sol:4",
+        "version": {
+          "withMetadata": "3b5a744d59497ed88e49b28b8c3c3673c711db010379abfc8e7a01523078ec96",
+          "withoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355",
+          "linkedWithoutMetadata": "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)312_storage)dyn_storage)",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)312_storage)dyn_storage": {
+              "label": "struct Register2.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)312_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register2.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)312_storage": {
+              "label": "struct Register2.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register2": {
+        "src": "contracts/Register2.sol:4",
+        "version": {
+          "withMetadata": "c5d2996cd07d391fa2dfb3455d3b0884d31816350b7bd61195c5984a2c8ff3c8",
+          "withoutMetadata": "0f1cb48528c090102e91d03e5f7bae38dcea594f900d00faf696768900b35ccc",
+          "linkedWithoutMetadata": "0f1cb48528c090102e91d03e5f7bae38dcea594f900d00faf696768900b35ccc"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()",
+          "inc()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:15"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register2.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register2.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register2.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "11e3d6c588f15deca4fd45698d8daa3a21abbe1b9cf2e105f9c534701894c9b6",
+          "withoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0",
+          "linkedWithoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register",
+              "src": "contracts/Register.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Register2": {
+        "src": "contracts/Register2.sol:4",
+        "version": {
+          "withMetadata": "c5d2996cd07d391fa2dfb3455d3b0884d31816350b7bd61195c5984a2c8ff3c8",
+          "withoutMetadata": "0f1cb48528c090102e91d03e5f7bae38dcea594f900d00faf696768900b35ccc",
+          "linkedWithoutMetadata": "0f1cb48528c090102e91d03e5f7bae38dcea594f900d00faf696768900b35ccc"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()",
+          "inc()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)332_storage)dyn_storage)",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:15"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register2",
+              "src": "contracts/Register2.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)332_storage)dyn_storage": {
+              "label": "struct Register2.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)332_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register2.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)332_storage": {
+              "label": "struct Register2.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "7260a3c3260033120cfca7afefbeedc7291d7a400c1c502ed8e10cdeeca8a8f5",
+          "withoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0",
+          "linkedWithoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register",
+              "src": "contracts/Register.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "7260a3c3260033120cfca7afefbeedc7291d7a400c1c502ed8e10cdeeca8a8f5",
+          "withoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0",
+          "linkedWithoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register",
+              "src": "contracts/Register.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:5",
+        "version": {
+          "withMetadata": "355af64bb8c2bd8f1a0efb532228bf3021ce1b1ffa816d7338c99a0cdccc7cfa",
+          "withoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0",
+          "linkedWithoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:16"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register",
+              "src": "contracts/Register.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)9_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)9_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:4",
+        "version": {
+          "withMetadata": "7260a3c3260033120cfca7afefbeedc7291d7a400c1c502ed8e10cdeeca8a8f5",
+          "withoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0",
+          "linkedWithoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:14"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register",
+              "src": "contracts/Register.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)8_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Register": {
+        "src": "contracts/Register.sol:5",
+        "version": {
+          "withMetadata": "355af64bb8c2bd8f1a0efb532228bf3021ce1b1ffa816d7338c99a0cdccc7cfa",
+          "withoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0",
+          "linkedWithoutMetadata": "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkRegistration(uint256)",
+          "getRegistrationList()",
+          "transferOwnership(uint256)",
+          "registerPlot(uint256,uint256)",
+          "changeAskingPrice(uint256,uint256)",
+          "setValue(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "Plots",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)",
+              "contract": "Register",
+              "src": "contracts/Register.sol:15"
+            },
+            {
+              "label": "keyArray",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Register",
+              "src": "contracts/Register.sol:16"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Register",
+              "src": "contracts/Register.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(RegistrationInfo)9_storage)dyn_storage": {
+              "label": "struct Register.RegistrationInfo[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)": {
+              "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RegistrationInfo)9_storage": {
+              "label": "struct Register.RegistrationInfo",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "price",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "askingPrice",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    }
+  ]
+}

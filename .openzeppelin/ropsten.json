@@ -1,0 +1,435 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xB51eaCFB782d0BF07F6fBF8B959Aa30336bD4De3",
+    "txHash": "0x7645c2b3d12e9cb4a81bd8d0e0eb307b3bce503b7bbccafd70ce8a81d7944081"
+  },
+  "proxies": [
+    {
+      "address": "0x2aee331E5BF07befDf11f1486b8F8F5E6E4e1414",
+      "txHash": "0x1b4b5bb0d61e0ce630f82e1a77c353121eed643f7d23e4a0309b06a9081ed8c5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2d5dD6378f4Bd03bD59E9f94468Dfa56ca1e7122",
+      "txHash": "0xcfad8dfff29ead72ff95e4da84ba076783e9b676b41702a61d766bad2d98746b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x69eD0cf490A7428f8172972eAC45677b8E1053D7",
+      "txHash": "0x0810fe8e6d88a570bf8ba78b96970958d50e831782da32fc2d5cf85cbfb6f5c8",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xd045Bb714e6c7429926fef961D165A66E77B9767",
+      "txHash": "0xf2d9b976d4f1ae453227bed09a214ca950465b21d8a20c610348523a479a93ba",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9eedF13F04Fae5DcdACc9c3fdb359EC4E4126ec6",
+      "txHash": "0x196389ff1a1a2981313d172aa3a164907a0ee5772982c2ca2fe308d9e539b33b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc443FB29db0Dd399110511CeCc46A1074b22d331",
+      "txHash": "0x5aa94c9af4956c6ed58d1e4967335d9cbe9f7fd1e6066f08f556eeb04c9aede7",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2a3315B626e879C28412f770Ef5d298E201B4C44",
+      "txHash": "0xf05568e7eeae362620f1bac8dacc510a6c3ff4c3a32082b0545df24a89c24478",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x528d849B1af5f8994Fe231E646052035F340f1aC",
+      "txHash": "0xf60103a0c844bcd0a4382884ac5d36f43181b82d27d878c97db49b6611561bcc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4c060483d085AFc60364EefF5c21CB61Da35F07a",
+      "txHash": "0x7d43f9950ac0c3056a2ebc4910adafe8abfd01ed7d4a782b950e1f6122293647",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0bDF25303615FAb8C63be721ca7E69C4Ca3A88e1",
+      "txHash": "0xb6d00ea04a2a8de9b77cdb239deaa3c7609cd6c57ac7b1f85378e10d8538e636",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "aaab352680e322a61bb083072bdf3c01e56b19b2faf33b4a9b2c8f1d7888fc9f": {
+      "address": "0x18D0aefAcF7B546C516bF6478E972D68954E8808",
+      "txHash": "0xce71634c7dd909bd06b2d661b25b4fb4d580e6891b9db7a8675bc75f7ea15532",
+      "layout": {
+        "storage": [
+          {
+            "label": "Plots",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)",
+            "contract": "Register",
+            "src": "contracts/Register.sol:15"
+          },
+          {
+            "label": "keyArray",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)dyn_storage",
+            "contract": "Register",
+            "src": "contracts/Register.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(RegistrationInfo)9_storage)dyn_storage": {
+            "label": "struct Register.RegistrationInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RegistrationInfo)9_storage": {
+            "label": "struct Register.RegistrationInfo",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "askingPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "62248acbfb5bc2d7c79bdc480205fff9e09863f3bcd97298b5b165c670bd5902": {
+      "address": "0xD4a1b034895C057446A84C4a9e844c179c7BE972",
+      "txHash": "0xe237fac40f3b44b8b96d6a779076b149b0ec62b98d9b4f58860a98c528f5acb3",
+      "layout": {
+        "storage": [
+          {
+            "label": "Plots",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)",
+            "contract": "Register",
+            "src": "contracts/Register.sol:15"
+          },
+          {
+            "label": "keyArray",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)dyn_storage",
+            "contract": "Register",
+            "src": "contracts/Register.sol:16"
+          },
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Register",
+            "src": "contracts/Register.sol:17"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(RegistrationInfo)9_storage)dyn_storage": {
+            "label": "struct Register.RegistrationInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)9_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RegistrationInfo)9_storage": {
+            "label": "struct Register.RegistrationInfo",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "askingPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "15603eae41a1a4fa5da990495b42244e74966fd35003b75d5a529dc7a0d123e0": {
+      "address": "0x86aB9C6D9c620f37E99724585dDbae9d3a1aF94a",
+      "txHash": "0x05b579fc50b73dec1879796dd58c6b077705dfd4ceb2fe4ba429c847f1456b89",
+      "layout": {
+        "storage": [
+          {
+            "label": "Plots",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+            "contract": "Register",
+            "src": "contracts/Register.sol:14"
+          },
+          {
+            "label": "keyArray",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)dyn_storage",
+            "contract": "Register",
+            "src": "contracts/Register.sol:15"
+          },
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Register",
+            "src": "contracts/Register.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+            "label": "struct Register.RegistrationInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RegistrationInfo)8_storage": {
+            "label": "struct Register.RegistrationInfo",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "askingPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "0f1cb48528c090102e91d03e5f7bae38dcea594f900d00faf696768900b35ccc": {
+      "address": "0xD527621a448630a8e254eb20E5Fda146fA2d513D",
+      "txHash": "0xc5f9d2418098124bda3c6da050910ee441b2fefd7bc622e749b791ab8ad07873",
+      "layout": {
+        "storage": [
+          {
+            "label": "Plots",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)332_storage)dyn_storage)",
+            "contract": "Register2",
+            "src": "contracts/Register2.sol:14"
+          },
+          {
+            "label": "keyArray",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)dyn_storage",
+            "contract": "Register2",
+            "src": "contracts/Register2.sol:15"
+          },
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Register2",
+            "src": "contracts/Register2.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(RegistrationInfo)332_storage)dyn_storage": {
+            "label": "struct Register2.RegistrationInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)332_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct Register2.RegistrationInfo[])",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RegistrationInfo)332_storage": {
+            "label": "struct Register2.RegistrationInfo",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "askingPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "df10994cff90e12809db39d19d161fd65a1f647c6f79b91d84878bb3a7fad355": {
+      "address": "0xB54F843F130fB5aEea86157bA073b008bd2fc7Fb",
+      "txHash": "0xc40c3dcd08e1086b2e4b2abc462df9251f9aa829909266bf089693194dc6edee",
+      "layout": {
+        "storage": [
+          {
+            "label": "Plots",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)",
+            "contract": "Register",
+            "src": "contracts/Register.sol:14"
+          },
+          {
+            "label": "keyArray",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)dyn_storage",
+            "contract": "Register",
+            "src": "contracts/Register.sol:15"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(RegistrationInfo)8_storage)dyn_storage": {
+            "label": "struct Register.RegistrationInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(RegistrationInfo)8_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct Register.RegistrationInfo[])",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RegistrationInfo)8_storage": {
+            "label": "struct Register.RegistrationInfo",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "askingPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
